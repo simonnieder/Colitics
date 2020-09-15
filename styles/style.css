@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+header {
+  background: #262626;
+}
+
+header h1 {
+  padding: 10px;
+  color: white;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+#overview {
+  background-color: #333333;
+  color: white;
+  padding: 2%;
+  position: relative;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#text {
+  flex: 1;
+  position: relative;
+  padding: 10px;
+  align-self: center;
+  max-width: 800px;
+  min-width: 350px;
+}
+
+.overviewChild img {
+  width: 100%;
+  height: 100%;
+}
+
+#overview h1 {
+  text-align: left;
+  padding: 0;
+  font-size: 2.5rem;
+  font-weight: 300;
+}
+#overview p {
+  font-size: 1.25rem;
+}
+
+#parentMembers {
+  margin-top: 2rem;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.members {
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 1rem;
+  margin: 2%;
+  background: #333333;
+  padding: 2rem;
+  align-self: center;
+  width: 15vw;
+  min-width: 250px;
+  height: 30vh;
+}
+.members img {
+  max-width: 100%;
+  max-height: 80%;
+}
+
+.members h2 {
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  padding: 10px;
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+h1 {
+  padding: 10px;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+footer p {
+  font-size: 1.5rem;
+  color: black;
+  text-align: center;
+}
