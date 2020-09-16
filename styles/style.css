@@ -133,10 +133,12 @@ footer p {
 }
 
 #stats {
-  margin-top: 10vh;
+  position: relative;
+  background-color: #333333;
+  margin: 10vh 2vw;
+  color: white;
 }
 iframe {
-  border: 2px solid #333333;
-  width: 95vw;
+  width: 95%;
   height: 80vh;
 }
