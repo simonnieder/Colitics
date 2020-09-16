@@ -127,6 +127,10 @@ footer p {
   opacity: 0;
 }
 
-.members:hover .overlay {
+body.nontouch .members:hover .overlay {
+  opacity: 1;
+}
+
+body .members:active .overlay {
   opacity: 1;
 }
