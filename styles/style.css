@@ -10,14 +10,14 @@ header {
 
 header h1 {
   padding: 10px;
-  color: white;
+  color: #d33f49;
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
 }
 
 #overview {
-  background-color: #333333;
+  background-color: #3d3d3d;
   color: white;
   padding: 2%;
   position: relative;
@@ -42,6 +42,7 @@ header h1 {
 }
 
 #overview h1 {
+  color: #d33f49;
   text-align: left;
   padding: 0;
   font-size: 2.5rem;
@@ -66,7 +67,7 @@ header h1 {
   flex-shrink: 0;
   border-radius: 0.5rem;
   margin: 2%;
-  background: #333333;
+  background: #3d3d3d;
   padding: 3rem;
   align-self: center;
   width: 15vw;
@@ -101,7 +102,6 @@ h1 {
 }
 
 footer p {
-  margin: 20px;
   font-size: 1.5rem;
   color: black;
   text-align: center;
@@ -123,7 +123,7 @@ footer p {
   bottom: 0;
   right: 0;
   transition: 0.3s ease;
-  background: #333333;
+  background: #3d3d3d;
   opacity: 0;
 }
 
@@ -134,11 +134,20 @@ footer p {
 
 #stats {
   position: relative;
-  background-color: #333333;
-  margin: 10vh 2vw;
+  background-color: #3d3d3d;
+  margin-top: 10vh;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  padding-bottom: 5vh;
   color: white;
 }
 iframe {
   width: 95%;
   height: 80vh;
+}
+
+footer {
+  background: #d33f49;
+  color: white;
+  padding: 10px;
 }
