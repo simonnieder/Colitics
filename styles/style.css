@@ -127,10 +127,16 @@ footer p {
   opacity: 0;
 }
 
-body.nontouch .members:hover .overlay {
+.members:active .overlay,
+.members:hover .overlay {
   opacity: 1;
 }
 
-body .members:active .overlay {
-  opacity: 1;
+#stats {
+  margin-top: 10vh;
+}
+iframe {
+  border: 2px solid #333333;
+  width: 95vw;
+  height: 80vh;
 }
