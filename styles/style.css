@@ -61,6 +61,7 @@ header h1 {
 }
 
 .members {
+  text-align: center;
   overflow: hidden;
   cursor: pointer;
   position: relative;
@@ -71,7 +72,7 @@ header h1 {
   padding: 3rem;
   align-self: center;
   width: 10%;
-  min-width: 13%;
+  min-width: 200px;
   height: 30vh;
 }
 .members img {
