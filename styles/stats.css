@@ -102,13 +102,35 @@ nav img {
   padding: 0 3rem;
 }
 #steckbrief > div {
+  overflow: hidden;
+  position: relative;
   align-self: center;
+}
+/* #sippsepp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #3d3d3d;
+  z-index: 10;
+} */
+#text-field::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #d33f49;
+  z-index: 10;
 }
 #infos > img {
   height: 20px;
 }
 
 #text {
+  overflow: hidden;
   font-size: 1.25rem;
   display: flex;
   justify-content: space-between;
@@ -128,6 +150,9 @@ footer {
   padding: 10px;
   font-size: 1.5rem;
   text-align: center;
+}
+.reveal {
+  opacity: 0;
 }
 
 @media screen and (max-width: 400px) {

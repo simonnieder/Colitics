@@ -1,29 +1,24 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: Poppins, sans-serif;
 }
-
-header {
-  background: #262626;
+html {
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
 }
 h1 {
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
 }
-
-header > h1 {
-  color: #d33f49;
-  font-size: 3rem;
-  font-weight: 400;
-  text-align: center;
-}
-
-#overview {
+#hero {
+  min-height: 100vh;
   background-image: linear-gradient(
       12deg,
-      rgba(193, 193, 193, 0.05) 0%,
+      rgba(193, 193, 193, 0.05) 0,
       rgba(193, 193, 193, 0.05) 2%,
       rgba(129, 129, 129, 0.05) 2%,
       rgba(129, 129, 129, 0.05) 27%,
@@ -34,7 +29,7 @@ header > h1 {
     ),
     linear-gradient(
       321deg,
-      rgba(240, 240, 240, 0.05) 0%,
+      rgba(240, 240, 240, 0.05) 0,
       rgba(240, 240, 240, 0.05) 13%,
       rgba(231, 231, 231, 0.05) 13%,
       rgba(231, 231, 231, 0.05) 34%,
@@ -45,7 +40,7 @@ header > h1 {
     ),
     linear-gradient(
       236deg,
-      rgba(189, 189, 189, 0.05) 0%,
+      rgba(189, 189, 189, 0.05) 0,
       rgba(189, 189, 189, 0.05) 47%,
       rgba(138, 138, 138, 0.05) 47%,
       rgba(138, 138, 138, 0.05) 58%,
@@ -56,7 +51,7 @@ header > h1 {
     ),
     linear-gradient(
       96deg,
-      rgba(53, 53, 53, 0.05) 0%,
+      rgba(53, 53, 53, 0.05) 0,
       rgba(53, 53, 53, 0.05) 53%,
       rgba(44, 44, 44, 0.05) 53%,
       rgba(44, 44, 44, 0.05) 82%,
@@ -65,8 +60,27 @@ header > h1 {
       rgba(8, 8, 8, 0.05) 98%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    linear-gradient(334deg, rgb(37, 36, 36), rgb(37, 36, 36));
-  color: white;
+    linear-gradient(334deg, #252424, #252424);
+}
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0.5rem 8vw;
+}
+#header > h1 {
+  color: #d33f49;
+  text-align: left;
+}
+nav > a {
+  color: #fff;
+  text-transform: lowercase;
+  margin: 0 1rem;
+  font-size: 1.25rem;
+}
+#overview {
+  color: #fff;
   padding: 4vw;
   position: relative;
   justify-content: center;
@@ -74,7 +88,6 @@ header > h1 {
   flex-direction: row;
   flex-wrap: wrap;
 }
-
 #text {
   position: relative;
   align-self: center;
@@ -84,12 +97,10 @@ header > h1 {
   min-width: 300px;
   flex: 1;
 }
-
 #overview img {
   width: 100%;
   height: 100%;
 }
-
 #text > h1 {
   color: #d33f49;
   text-align: left;
@@ -99,7 +110,6 @@ header > h1 {
 #text > p {
   font-size: 1.25rem;
 }
-
 #parentMembers {
   margin-top: 2rem;
   justify-content: center;
@@ -120,7 +130,7 @@ header > h1 {
   margin: 2rem;
   background-image: repeating-linear-gradient(
       135deg,
-      rgba(19, 19, 19, 0.02) 0px,
+      rgba(19, 19, 19, 0.02) 0,
       rgba(19, 19, 19, 0.02) 132px,
       rgba(233, 233, 233, 0.02) 132px,
       rgba(233, 233, 233, 0.02) 257px,
@@ -139,7 +149,7 @@ header > h1 {
     ),
     repeating-linear-gradient(
       135deg,
-      rgba(152, 152, 152, 0.02) 0px,
+      rgba(152, 152, 152, 0.02) 0,
       rgba(152, 152, 152, 0.02) 76px,
       rgba(91, 91, 91, 0.02) 76px,
       rgba(91, 91, 91, 0.02) 199px,
@@ -158,7 +168,7 @@ header > h1 {
     ),
     repeating-linear-gradient(
       135deg,
-      rgba(39, 39, 39, 0.02) 0px,
+      rgba(39, 39, 39, 0.02) 0,
       rgba(39, 39, 39, 0.02) 109px,
       rgba(131, 131, 131, 0.02) 109px,
       rgba(131, 131, 131, 0.02) 202px,
@@ -175,7 +185,7 @@ header > h1 {
       rgba(224, 224, 224, 0.02) 614px,
       rgba(224, 224, 224, 0.02) 747px
     ),
-    linear-gradient(90deg, rgb(52, 52, 52), rgb(51, 51, 51));
+    linear-gradient(90deg, #343434, #333);
   border-radius: 0.5rem;
   align-self: center;
   text-align: center;
@@ -191,30 +201,26 @@ header > h1 {
 }
 .members h2 {
   font-size: 1.25rem;
-  color: white;
+  color: #fff;
 }
-
 li {
   list-style: none;
 }
-
 h2 {
   padding: 10px;
   font-size: 1.5rem;
   font-weight: 300;
   text-align: center;
 }
-
 .content {
   font-size: 1.25rem;
-  color: white;
+  color: #fff;
   text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .overlay {
   position: absolute;
   top: 0;
@@ -225,42 +231,20 @@ h2 {
   background: #3d3d3d;
   opacity: 0;
 }
-
 .members:active .overlay,
 .members:hover .overlay {
   opacity: 0.9;
 }
-
-/* #stats {
-  position: relative;
-  background-color: #3d3d3d;
-  margin-top: 10vh;
-  margin-left: 2vw;
-  margin-right: 2vw;
-  padding-bottom: 5vh;
-  margin-bottom: 5vh;
-  color: white;
-}
-iframe {
-  width: 95%;
-  height: 80vh;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-} */
-
 footer {
   background: #d33f49;
-  color: white;
+  color: #fff;
   padding: 10px;
   font-size: 1.5rem;
   text-align: center;
 }
-
 #memberstitle h1 {
   color: #d33f49;
 }
-
 .login-box {
   width: 90%;
   max-width: 1200px;
@@ -268,7 +252,7 @@ footer {
   padding: 40px;
   background-image: linear-gradient(
       12deg,
-      rgba(193, 193, 193, 0.05) 0%,
+      rgba(193, 193, 193, 0.05) 0,
       rgba(193, 193, 193, 0.05) 2%,
       rgba(129, 129, 129, 0.05) 2%,
       rgba(129, 129, 129, 0.05) 27%,
@@ -279,7 +263,7 @@ footer {
     ),
     linear-gradient(
       321deg,
-      rgba(240, 240, 240, 0.05) 0%,
+      rgba(240, 240, 240, 0.05) 0,
       rgba(240, 240, 240, 0.05) 13%,
       rgba(231, 231, 231, 0.05) 13%,
       rgba(231, 231, 231, 0.05) 34%,
@@ -290,7 +274,7 @@ footer {
     ),
     linear-gradient(
       236deg,
-      rgba(189, 189, 189, 0.05) 0%,
+      rgba(189, 189, 189, 0.05) 0,
       rgba(189, 189, 189, 0.05) 47%,
       rgba(138, 138, 138, 0.05) 47%,
       rgba(138, 138, 138, 0.05) 58%,
@@ -301,7 +285,7 @@ footer {
     ),
     linear-gradient(
       96deg,
-      rgba(53, 53, 53, 0.05) 0%,
+      rgba(53, 53, 53, 0.05) 0,
       rgba(53, 53, 53, 0.05) 53%,
       rgba(44, 44, 44, 0.05) 53%,
       rgba(44, 44, 44, 0.05) 82%,
@@ -310,21 +294,18 @@ footer {
       rgba(8, 8, 8, 0.05) 98%,
       rgba(8, 8, 8, 0.05) 100%
     ),
-    linear-gradient(334deg, rgb(37, 36, 36), rgb(37, 36, 36));
+    linear-gradient(334deg, #252424, #252424);
   box-sizing: border-box;
 }
-
 .login-box h2 {
   margin: 0 0 30px;
   padding: 0;
   color: #fff;
   text-align: left;
 }
-
 .login-box .user-box {
   position: relative;
 }
-
 .login-box .user-box input,
 .login-box .user-box textarea {
   width: 100%;
@@ -334,8 +315,8 @@ footer {
   margin-bottom: 30px;
   border: none;
   border-bottom: 1px solid #fff;
-  outline: none;
-  background: transparent;
+  outline: 0;
+  background: 0 0;
 }
 .login-box .user-box label {
   position: absolute;
@@ -347,7 +328,6 @@ footer {
   pointer-events: none;
   transition: 0.5s;
 }
-
 .login-box .user-box input:focus ~ label,
 .login-box .user-box input:valid ~ label,
 .login-box .user-box textarea:focus ~ label,
@@ -357,32 +337,39 @@ footer {
   color: #d33f49;
   font-size: 12px;
 }
-
 .login-box button {
-  outline: none;
+  outline: 0;
   padding: 5px;
   font-size: 1rem;
   background-color: inherit;
-  color: white;
-  border: 2px solid white;
+  color: #fff;
+  border: 2px solid #fff;
 }
-
 .login-box button:hover {
   color: #d33f49;
   cursor: pointer;
   border: 2px solid #d33f49;
 }
-
 #login-form {
   margin: 10rem 0;
 }
-
 textarea {
   resize: none;
   height: 10rem;
   min-width: 100%;
 }
-
-main a {
-  text-decoration: none;
+@media screen and (max-width: 400px) {
+  h1 {
+    font-size: 2.25rem;
+  }
+  nav > a {
+    font-size: 1.25rem;
+    margin: 0.5rem;
+  }
+  #overview p {
+    font-size: 1.125rem;
+  }
+  #header {
+    align-items: center;
+  }
 }
