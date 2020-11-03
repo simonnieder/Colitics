@@ -10,8 +10,9 @@ a {
   text-decoration: none;
 }
 h1 {
-  font-size: 3rem;
+  color: #d33f49;
   font-weight: 400;
+  font-size: 3rem;
   text-align: center;
 }
 #hero {
@@ -61,6 +62,7 @@ h1 {
       rgba(8, 8, 8, 0.05) 100%
     ),
     linear-gradient(334deg, #252424, #252424);
+  margin-bottom: 4rem;
 }
 #header {
   display: flex;
@@ -69,7 +71,8 @@ h1 {
   flex-wrap: wrap;
   padding: 0.5rem 8vw;
 }
-#header > h1 {
+#header > a {
+  font-size: 3rem;
   color: #d33f49;
   text-align: left;
 }
@@ -102,10 +105,7 @@ nav > a {
   height: 100%;
 }
 #text > h1 {
-  color: #d33f49;
   text-align: left;
-  font-size: 2.75rem;
-  font-weight: 300;
 }
 #text > p {
   font-size: 1.25rem;
@@ -117,9 +117,6 @@ nav > a {
   flex-direction: row;
   flex-wrap: wrap;
   padding: 0 10%;
-}
-#memberstitle {
-  margin-top: 3rem;
 }
 .members {
   position: relative;
@@ -242,9 +239,6 @@ footer {
   font-size: 1.5rem;
   text-align: center;
 }
-#memberstitle h1 {
-  color: #d33f49;
-}
 .login-box {
   width: 90%;
   max-width: 1200px;
@@ -297,10 +291,9 @@ footer {
     linear-gradient(334deg, #252424, #252424);
   box-sizing: border-box;
 }
-.login-box h2 {
+.login-box h1 {
   margin: 0 0 30px;
-  padding: 0;
-  color: #fff;
+  color: #d33f49;
   text-align: left;
 }
 .login-box .user-box {
